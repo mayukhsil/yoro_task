@@ -9,10 +9,10 @@ class HomeViewController extends GetxController{
   final MessageRepo messageRepo = MessageRepo();
   MessageModel messageModel;
   var isLoading = true.obs;
-  var width = 250.w.obs;
   var random1 = 0.obs;
   var random2 = 0.obs;
   var random3 = 0.obs;
+  var selected = false.obs;
   List<Data> randomList = [];
   List<Data> messageObjects = [];
   Randomizer randomizer = Randomizer();

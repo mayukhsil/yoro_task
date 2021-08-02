@@ -40,8 +40,7 @@ class _HomeViewState extends State<HomeView> {
                     await controller.generateRandomNumbers();
                 controller.random3.value =
                     await controller.generateRandomNumbers();
-                final random = Random();
-                controller.width.value = random.nextInt(200).toDouble();
+
                 await controller.onInit();
               },
               child: Padding(
@@ -57,7 +56,6 @@ class _HomeViewState extends State<HomeView> {
                                     EdgeInsets.only(top: 15.sp, left: 80.w),
                                 child: Container(
                                     height: 60.h,
-                                    width: controller.width.value,
                                     child: ClipRRect(
                                       borderRadius: BorderRadius.circular(15.sp),
                                       child: Stack(
